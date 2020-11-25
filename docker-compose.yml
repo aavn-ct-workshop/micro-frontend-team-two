@@ -8,8 +8,5 @@ services:
     container_name: "team-two"
     build: .
     image: team-two
-    networks:
-      - micro-frontend
-networks:
-  micro-frontend:
-    driver: bridge
+    ports:
+      - 8080:8080

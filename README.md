@@ -1,7 +1,7 @@
 # micro-frontend-team-two
 ## Overall
 Inspired by https://neal.fun/spend/
-![image](docs/spend_bill_gate_money.png)
+![image](documentation/spend_bill_gate_money.png)
 
 Bill Gates is one of billionaires in the world. He's very rich. He has a lot of money. For that reason, today we will together help him spent his money on our application.
 
@@ -17,7 +17,7 @@ So that we can work indepently and the team do their fragment freely choose the 
 1. Build a fragment can display a product like this:
     * When Bill remaining money less than the price of product, _buy / sell_ button must not be allowed to click.
     * When _buy / sell_ is clicked, must update the receipt (_with receipt belong to team 3_).
-    ![image](docs/team-two-fragment.png)  
+    ![image](documentation/team-two-fragment.png)  
 
     __Hint__: Your team should produce a fragment within JS file. Application just import your JS and declare some thing like:  
     ```html

@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  # ---------------------------
+  # Team Two
+  # ---------------------------
+  team-two:
+    container_name: "team-two"
+    build: .
+    image: team-two
+    networks:
+      - micro-frontend
+networks:
+  micro-frontend:
+    driver: bridge

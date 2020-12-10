@@ -3,7 +3,7 @@ class ProductItem extends HTMLElement {
         return ["product-type"];
     }
     connectedCallback() {
-        this.products = this.fetchProduct();
+        this.products = this.fetchProducts();
         this.render();
         const productType = this.getAttribute("product-type");
         const product = this.products[productType];
@@ -36,7 +36,7 @@ class ProductItem extends HTMLElement {
         });
     }
     attributeChangedCallback() {
-        this.products = this.fetchProduct();
+        this.products = this.fetchProducts();
         this.render();
     }
     render() {
@@ -62,17 +62,17 @@ class ProductItem extends HTMLElement {
         `;
         
     }
-    fetchProduct() {
+    fetchProducts() {
         return {
-            airpods: { name: "Airpods", price: "199", img: "airpods.jpg" },
-            shoe: { name: "Air Jordans", price: "125", img: "air-jordans.jpg" },
-            iphone: { name: "Smartphone", price: "699", img: "smartphone.jpg" },
-            book: { name: "Book", price: "15", img: "book.jpg" },
-            bike: { name: "Bike", price: "800", img: "bike.jpg" },
-            videoGame: { name: "Gaming Console", price: "299", img: "video-game.jpg" },
-            movieTicket: { name: "Movie Ticket", price: "12", img: "movie-ticket.jpg" },
-            amazonEcho: { name: "Amazon Echo", price: "99", img: "amazon-echo.jpg" },
-            drone: { name: "Drone", price: "350", img: "drone.jpg" }
+            airpods: { name: "Airpods", price: "199000", img: "airpods.jpg" },
+            shoe: { name: "Air Jordans", price: "125000", img: "air-jordans.jpg" },
+            iphone: { name: "Smartphone", price: "699000", img: "smartphone.jpg" },
+            book: { name: "Book", price: "15000", img: "book.jpg" },
+            bike: { name: "Bike", price: "800000", img: "bike.jpg" },
+            videoGame: { name: "Gaming Console", price: "299000", img: "video-game.jpg" },
+            movieTicket: { name: "Movie Ticket", price: "12000", img: "movie-ticket.jpg" },
+            amazonEcho: { name: "Amazon Echo", price: "99000", img: "amazon-echo.jpg" },
+            drone: { name: "Drone", price: "350000", img: "drone.jpg" }
         };
     }
 }

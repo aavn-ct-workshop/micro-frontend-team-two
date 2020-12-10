@@ -1,17 +1,17 @@
-document.getElementsByClassName('dummy-amount-200')[0]?.addEventListener("click", () => {
+document.getElementsByClassName('dummy-amount-200000')[0]?.addEventListener("click", () => {
     this.dispatchEvent(
         new CustomEvent("team-one-current-amount", {
             bubbles: true,
-            detail: { 'amount': 200 }
+            detail: { 'amount': 200000 }
         })
     );
 });
 
-document.getElementsByClassName('dummy-amount-1000')[0]?.addEventListener("click", () => {
+document.getElementsByClassName('dummy-amount-1000000')[0]?.addEventListener("click", () => {
     this.dispatchEvent(
         new CustomEvent("team-one-current-amount", {
             bubbles: true,
-            detail: { 'amount': 1000 }
+            detail: { 'amount': 1000000 }
         })
     );
 });
